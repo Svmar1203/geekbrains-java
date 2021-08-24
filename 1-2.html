@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict"
+        var a = 1, b = 1, c, d;
+        c = ++a; alert(c);           // 2, ++а - префиксная форма, она возвращает новое значение( будет1+1=2)
+        d = b++; alert(d);           // 1, b++ - постфиксная форма, возвращает старое значение (будет 1+1=2, но возвратит 1)
+        c = (2 + ++a); alert(c);      // 5, ++а будет(2+1=3), в итоге 2 + 3 = 5
+        d = (2 + b++); alert(d);      // 4, b++ будет (2+1=3, но возвратит 2) В итоге 2 + 2 = 4
+        alert(a);                    // 3 В итоге а из начального значения 1+1+1 = 3
+        alert(b);                    // 3 В итоге b будет равно 1+1+1 = 3
+    </script>
+    <script>
+        var a = 2;
+        var x = 1 + (a *= 2); /* var x = 1 + (2*2) = 5
+    </script>
+</body>
+
+</html>
