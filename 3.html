@@ -11,15 +11,23 @@
 <body>
     <script>
         "use strict"
-        let a = 15;
-        let b = 6;
+        let a = 8;
+        let b = -3;
         let x = a - b;
+        let y = a * b;
+        let j = a + b;
 
         if (a > 0 && b > 0) {
             console.log(x);
+        } else if (a < 0 && b < 0) {
+            console.log(y);
+        } else if ((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
+            console.log(j);
         }
 
     </script>
+
+
 </body>
 
 </html>
